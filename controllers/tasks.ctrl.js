@@ -23,3 +23,28 @@ const create = (req, res) => {
         }
     )
 }
+
+//put route
+const update = (req, res) => {
+    db.Task.findByIdAndUpdate(req.params.id,
+        {
+            $set: req.body
+        },
+        {new: true},
+        (err, updatedTask) => {
+            if(err) return res.status(400).json({error: err.message})
+            return res.status(200).json(updatedTask)
+        }
+    )
+}
+
+//delete route
+const destroy = (req, res) => {
+    db.Task.findByIdAndDelete(req.params.id, (error, deletedTask) => {
+        if(!deletedTask) return res.status(400).json({error: "Task not found"})
+        if(error) return res.status(400).json({error: error.message})
+        return res.status(200).json({
+            message: `Task ${deletedTask.title} deleted`
+        })
+    })
+}
