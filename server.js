@@ -10,3 +10,7 @@ const routes = require('./routes')
 //environment variables
 require('dotenv').config();
 const PORT = process.env.PORT || 3003;
+
+//set up cors middleware
+                                                 //👇deployed site link goes here
+const whitelist = [`${process.env.FRONTEND_URL}`, ``];
