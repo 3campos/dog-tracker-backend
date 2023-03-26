@@ -7,5 +7,16 @@
     "mongoose": "^7.0.3",
     "nodemon": "^2.0.22",
     "router": "^1.3.8"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "dog-tracker-backend",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
