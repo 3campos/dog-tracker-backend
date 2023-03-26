@@ -14,7 +14,7 @@ const index = (req, res) => {
     )
 }
 
-//create a POST route to add games to the game library
+//create a POST route to add tasks to the task library
 const create = (req, res) => {
     db.Task.create(
         req.body, (error, createdTask) => {
