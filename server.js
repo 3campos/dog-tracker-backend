@@ -4,3 +4,5 @@ const app = express();
 const methodOverride = require('method-override');
 const cors = require ('cors');
 
+//internal modules
+const routes = require('./routes')
