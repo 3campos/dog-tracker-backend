@@ -47,3 +47,11 @@ app.use('/tasks', routes.tasks)
 const mongoose = require('mongoose');
 const db = mongoose.connection;
 
+//establishing the connection b/n mongoDB Atlas
+mongoose
+    .connect(process.env.MONGODB_URI, {useNewUrlParser: true})
+    .then(() => {
+        console.log(`Mongodb connected at ${db.host}: ${db.port}`)
+    })
+    .catch((err)=>console.log(err))
+
