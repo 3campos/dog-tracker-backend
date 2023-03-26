@@ -37,3 +37,9 @@ app.use(express.urlencoded({extended: true}))
 //method override Middleware
 app.use(methodOverride("_method"))
 //serve public files
+
+//Routes
+//this adds /tasks to the start of all routes on local and deployed versions of the app
+app.use('/tasks', routes.tasks)
+//^sending the default route over to the controller
+
