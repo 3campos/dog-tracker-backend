@@ -23,6 +23,15 @@ const seedTasks = [
         location: "Burnham Park",
         potty: "1",
         notes: "Sniffed around and met another pup"
+    },
+    {
+        title: "Evening Walk",
+        label: "🦮",
+        duration: "45",
+        quantity: "0",
+        location: "Burnham Park",
+        potty: "1 and 2",
+        notes: "Played fetch"
     }
 ]
 

@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 //create schema
 const taskSchema = new mongoose.Schema({
-    title: {type: String, required: true},
+    title: {type: String},
     label: {type: String},
     duration: {type: String},
     quantity: {type: String},
