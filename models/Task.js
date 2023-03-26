@@ -7,7 +7,8 @@ const taskSchema = new mongoose.Schema({
     duration: {type: String},
     quantity: {type: String},
     location: {type: String},
-    notes: {type: String}
+    potty: {type: String},
+    notes: {type: String},
 })
 
 //create model
