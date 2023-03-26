@@ -25,3 +25,12 @@ const seedTasks = [
         notes: "Sniffed around and met another pup"
     }
 ]
+
+const seedDB = async() => {
+    await Task.deleteMany({});
+    await Task.insertMany(seedTasks);
+}
+
+seedDB().then(()=>{
+    mongoose.connection.close();
+})
