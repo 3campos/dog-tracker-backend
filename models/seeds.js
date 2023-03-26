@@ -13,8 +13,9 @@ mongoose.connect(process.env.MONGODB_URI)
     console.log(err)
 })
 
+//set up seedTasks array
 const seedTasks = [
     {
-        
+        title: "Walk Dog"
     }
 ]
