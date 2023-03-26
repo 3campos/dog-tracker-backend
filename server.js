@@ -55,3 +55,7 @@ mongoose
     })
     .catch((err)=>console.log(err))
 
+//confirms that the server is working
+app.listen(PORT, ()=> {
+    console.log(`server is running on port ${PORT}`)
+})
