@@ -43,3 +43,7 @@ app.use(methodOverride("_method"))
 app.use('/tasks', routes.tasks)
 //^sending the default route over to the controller
 
+//connect to mongoose server
+const mongoose = require('mongoose');
+const db = mongoose.connection;
+
