@@ -8,7 +8,7 @@ const Task = require('./Task.js');
 
 //connect to mongoose and set up console log test
 mongoose.connect(process.env.MONGODB_URI)
-.then(()=>{console.log('MONGO CONNECTION OPEN!!!')})
+.then(()=>{console.log('MONGO CONNECTION OPEN!')})
 .catch((err)=>{
     console.log(err)
 })
