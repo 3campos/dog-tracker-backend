@@ -6,3 +6,7 @@ const cors = require ('cors');
 
 //internal modules
 const routes = require('./routes')
+
+//environment variables
+require('dotenv').config();
+const PORT = process.env.PORT || 3003;
